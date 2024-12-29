@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="display()">click me!</button>
+    <h1 id="heading"></h1>
+    <p id="sum"></p>
+    <h3 id="mul"></h3>
+    <h4 id="sub"></h4>
+        <button onclick="sum()"> sum</button>
+
+    <button onclick="mul()">mul</button>
+
+    <button onclick="sub()">sub</button>
+
+    <script>
+        function display() {
+            document.getElementById("heading").innerHTML = "HEADING";
+            document.getElementById("heading").innerHTML = "THIS IS JAVASCRIPT";
+            document.getElementById("heading").innerHTML = "THIS IS ME";
+        }
+        function sum() {
+            var a = 5000
+            var b = 300
+            document.getElementById("sum").innerHTML = a + b;
+        }
+        function mul() {
+            var x = 600
+            var y = 10000
+            document.getElementById("mul").innerHTML = x * y;
+        }
+        function sub(){
+            var p = 300
+            var q = 200
+            document.getElementById("sub").innerHTML = x - y;
+        }
+
+        let datetoday = document.getElementById("date-today");
+        let today = new date();
+        let day = '{today.getdate()    <10   ? "0"  :   " "}'
+        {today.Getdate()}
+        document.write(day);
+    </script>
+</body>
+
+</html>
